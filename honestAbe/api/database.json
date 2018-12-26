@@ -1,0 +1,178 @@
+{
+    "database":
+   {
+    "politicians": [
+    {
+        "name": "Politician 1",
+        "PolId": 1,
+        "PACs": [1,5],
+        "Bills": [1,4]
+    },
+    {
+        "name": "Politician 2",
+        "PolId": 2,
+        "PACs": [1,3],
+        "Bills": [2,4]
+    },
+    {
+        "name": "Politician 3",
+        "PolId": 3,
+        "PACs": [1,2,5],
+        "Bills": [1,3,4]
+    },
+    {
+        "name": "Politician 4",
+        "PolId": 4,
+        "PACs": [1,2],
+        "Bills": [3,4]
+    },
+    {
+        "name": "Politician 5",
+        "PolId": 5,
+        "PACs": [2,3,4],
+        "Bills": [2,3,5]
+    }
+    ],
+
+    "pacs": [
+        {
+            "name": "PAC 1",
+            "PACId": 1,
+            "PolId": [1,2,3,4],
+            "CorpId": [1,2,5],
+            "IntId": "1"
+        },
+        {
+            "name": "PAC 2",
+            "PACId": 2,
+            "PolId": [3,4,5],
+            "CorpId": [3,5],
+            "IntId": "2"
+        },
+        {
+            "name": "PAC 3",
+            "PACId": 3,
+            "PolId": [2,5],
+            "CorpId": [1,3],
+            "IntId": "3"
+        },
+        {
+            "name": "PAC 4",
+            "PACId": 4,
+            "PolId": [5],
+            "CorpId": [4,5],
+            "IntId": "4"
+        },
+        {
+            "name": "PAC 5",
+            "PACId": 5,
+            "PolId": [1,3],
+            "CorpId": [2,4],
+            "IntId": "5"
+        }
+    ],
+
+    "corporations": [
+        {
+            "name": "Corporation 1",
+            "CorpId": 1,
+            "PACId": [1,3],
+            "IntId": [1,5]
+        },
+        {
+            "name": "Corporation 2",
+            "CorpId": 2,
+            "PACId": [1,5],
+            "IntId": [2,4]
+        },
+        {
+            "name": "Corporation 3",
+            "CorpId": 3,
+            "PACId": [2,3],
+            "IntId": [3,4]
+        },
+        {
+            "name": "Corporation 4",
+            "CorpId": 4,
+            "PACId": [4,5],
+            "IntId": [1,2]
+        },
+        {
+            "name": "Corporation 5",
+            "CorpId": 5,
+            "PACId": [1,2,4],
+            "IntId": [3,5]
+        }
+    ],
+    "interests": [
+        {
+            "name": "Interest 1",
+            "IntId": 1,
+            "PACId": "1",
+            "CorpId": [1,3],
+            "BillId": "4"
+        },
+        {
+            "name": "Interest 2",
+            "IntId": 2,
+            "PACId": "2",
+            "CorpId": [2,4],
+            "BillId": "3"
+        },
+        {
+            "name": "Interest 3",
+            "IntId": 3,
+            "PACId": "3",
+            "CorpId": [3,5],
+            "BillId": "2"
+        },
+        {
+            "name": "Interest 4",
+            "IntId": 4,
+            "PACId": "4",
+            "CorpId": [2,3],
+            "BillId": "5"
+        },
+        {
+            "name": "Interest 5",
+            "IntId": 5,
+            "PACId": "5",
+            "CorpId": [1,5],
+            "BillId": "1"
+        }
+    ],
+    "bills": [
+        {
+            "name": "Bill 1",
+            "BillId": 1,
+            "PolId": [1,3],
+            "IntId": "5"
+        },
+        {
+            "name": "Bill 2",
+            "BillId": 2,
+            "PolId": [2,5],
+            "IntId": "3"
+        },
+        {
+            "name": "Bill 3",
+            "BillId": 3,
+            "PolId": [3,4,5],
+            "IntId": "2"
+        },
+        {
+            "name": "Bill 4",
+            "BillId": 4,
+            "PolId": [1,2,3],
+            "IntId": "1"
+        },
+        {
+            "name": "Bill 5",
+            "BillId": 5,
+            "PolId": [4,5],
+            "IntId": "4"
+        }
+    ]
+}
+
+}
